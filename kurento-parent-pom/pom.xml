@@ -29,6 +29,7 @@
 		<developerConnection>${kurento-java.scm.developerConnection}</developerConnection>
 	</scm>
 
+
 	<!-- Organization-level information -->
 	<developers>
 		<developer>
@@ -71,8 +72,8 @@
 		It's not critical that these versions coincide with the latest available,
 		but whenever an API update is done in those files and released,
 		these version numbers should get updated accordingly. -->
-		<version.kms-api-core>6.15.0</version.kms-api-core>
-		<version.kms-api-elements>6.15.0</version.kms-api-elements>
+		<version.kms-api-core>6.15.0-VS</version.kms-api-core>
+		<version.kms-api-elements>6.15.0-VS</version.kms-api-elements>
 		<version.kms-api-filters>6.15.0</version.kms-api-filters>
 
 		<!-- Kurento extra modules -->
@@ -1473,6 +1474,13 @@
 		</profile>
 	</profiles>
 
+	<distributionManagement>
+		<repository>
+			<id>bintray-alex1712-maven</id>
+			<name>alex1712-maven</name>
+			<url>https://api.bintray.com/maven/alex1712/maven/${artifactId}/;publish=1;override=1</url>
+		</repository>
+	</distributionManagement>
 	<repositories>
 		<repository>
 			<id>kurento-snapshots</id>
